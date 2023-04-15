@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 :root {
     --main-color:  #38ff9c;
+    
   }
 *{
     padding: 0;
@@ -16,7 +17,8 @@ body{
     justify-content: space-between;
     margin: 2rem 4rem 0 4rem;
     padding: 0 2rem 0 2rem;
-    
+    flex-wrap: wrap;
+    position: relative;
 }
 .left-nav{
     display: flex;
@@ -48,6 +50,7 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 2rem;
+    position: relative;
     
 }
 #location{
@@ -101,6 +104,7 @@ header{
     transform: translateX(-50%);
     padding-bottom: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 
     animation-name: fadeInDown;
     animation-duration: 1s;
@@ -150,9 +154,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-}
-.about-me-section-middle-part p{
-    width: 60%;
+    
 }
 .experience{
     display: flex;
@@ -161,6 +163,7 @@ header{
     width: auto;
     justify-content: center;
     font-size: 20px;
+    padding: 40px;
     border-radius: 50%;
     background-color: var(--main-color);;
     text-align: center;
@@ -182,6 +185,8 @@ header{
 }
 .skills-section{
     background-color: rgb(245, 245, 245);
+
+
 }
 .skills-header{
     display: flex;
@@ -201,8 +206,7 @@ header{
     padding: 5px;
 }
 .skill-set{
-    margin:4rem 4rem 0 4rem;
-    padding: 10px;
+    margin:4rem 2rem 0 1rem;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -257,7 +261,7 @@ header{
     padding: 20px;
     width:300px;
     font-size: 20px;
-    box-shadow: 10px 2px 10px rgba(0, 186, 99, 0.5);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out
 }
 .project:hover{
@@ -327,7 +331,7 @@ header{
     display: flex;
     flex-direction: column;
     margin-top: 6rem;
-    width: 500px;
+    max-width: 500px;
 }
 .right-contact-page input{
     border-top: none;
@@ -385,9 +389,203 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .foot{
     color: white;
     
     
+}
+
+@media screen and (max-width: 769px) {
+    .left-heading-image img{
+        display: none;
+    }
+    .heading{
+    
+        font-size: 30px;
+        opacity: 0.9; /* Set the opacity to 50% */
+        padding: 8px;
+    }
+    #arrow_down{
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+    }
+    .project{
+        margin:4rem 1rem 0 1rem;
+        padding: 20px;
+        width:300px;
+        font-size: 20px;
+        box-shadow: 10px 2px 10px rgba(0, 186, 99, 0.5);
+        transition: all 0.2s ease-in-out
+    }
+}
+@media screen and (max-width: 1025px) {
+    .left-heading-image img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 20px solid white;
+        filter: grayscale(100%);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    .navbar{
+        margin: 2rem 0rem 0 0rem;
+        width: 100%;
+        
+    }
+    .heading{
+        padding-left: 2rem;
+    }
+    .about-me-section{
+        
+        width: 100%;
+    }
+  
+    .my-info{
+        flex-direction: column;
+    }
+    
+    .skill-set{
+        flex-direction: column;
+        
+    }
+    .skills-header h2{
+       
+        text-align: center;
+    }
+    .call-to-action{
+        text-align: center;
+    }
+    .items p{
+        text-align: left;
+    }
+    #contact{
+        display: none;
+    }
+    .buttons_icons img{
+        display: none;
+    }
+    .heading h1{
+        font-size: 35px;
+    }
+    .experience{
+        display: none;
+    }
+    .bout-me-section-middle-part p{
+       text-align: justify;
+        
+    }
+    .about-me-section-middle-part{
+        align-items: center;
+        margin: 6rem 0rem 0rem 0rem;
+        width: 90%;
+        padding-right: 5px;
+        
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 1.5rem;
+    }
+    .contact-page{
+        font-size: 15px;
+    }
+    .right-contact-page{
+        margin-top: -7rem;
+        padding: 0;
+
+    }
+    .skills-section{
+        width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        
+    }
+    .projects-sections{
+        width: 100%;
+        padding-right: 4rem;
+        
+        
+        
+    }
+    .contact-page{
+        width: 100%;
+        padding-right: 3rem;
+        margin-left: 0;
+        
+    }
+    footer{
+        width: 100%;
+        padding-right: 4rem;
+    }
+   .project{
+    padding-left: 4rem;
+   }
+   .foot{
+    padding-left: 4em;
+   }
+   
+}
+
+@media screen and (max-width: 376px) {
+    .navbar{
+     padding-right: 4.8rem;
+    }
+    .right-nav{
+        position: absolute;
+        right: 0.5cm;
+        
+        
+    }
+    .skills-header{
+        font-size: 15px;
+        padding-left: 4rem;
+    }
+    .about-me-header{
+        font-size: 15px;
+        padding-left: 4rem;
+    }
+    .about-me-section-middle-part{
+        padding-left: 4rem;
+    }
+    .items img{
+        height: 100px;
+        width: 100px;
+    }
+    .about-me-section{
+        
+        padding-right: 5.1rem;
+    }
+    .skills-section{
+        padding-right: 5.1rem;
+    }
+    .call-to-action{
+        padding-left: 4rem;
+    }
+    .projects-sections{
+        padding-right: 7.1rem;
+    }
+    .skills-header{
+        padding-left: 6.5rem;
+    }
+    footer{
+        padding-right: 7.1rem;
+    }
+    .contact-page{
+        padding-left: 4rem;
+    }
 }
