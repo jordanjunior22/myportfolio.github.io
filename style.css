@@ -377,6 +377,9 @@ margin-top: 1rem;
 }
 
 @media (max-width: 426px) {
+    .title{
+        width: 100%;
+    }
     .navbar i{
         display: block;
         margin-right: -4rem;
