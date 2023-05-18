@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Jordan Junior</title>
-</head>
-<body>
-    <div class="navbar">
-        <p class="logo">Jordan</p>
-
-        <div class="left-nav">
-            <a class="links" href="#">About</a>
-            <a class="links" href="#">Experience</a>
-            <a class="links" href="#">Work</a>
-            <a class="links" href="#">Contact</a>
-            <button class="resume-btn" onclick="window.open('https://drive.google.com/file/d/1WElfxe1OAmh0SmZLSHoLhFV8htmJwy0n/view?usp=sharing', '_blank');">Resume</button>
-        </div>
-        <i class='bx bx-menu menu'></i>
-        
-    </div>
-
-    <div class="home">
-        <div class="title hidden">
-            <p class="hi">Hi, my name is</p>
-            <h1 class="name">Jordan Junior.</h1>
-            <h1 class="des">I'm a Web Developer.</h1>
-            <p class="des-two">I'm a web developer with a passion for creating engaging and dynamic websites and 
-                applications. I have experience in <span style="color:#2DFFFF">front-end</span> and <span style="color:#2DFFFF">back-end development</span> , as well as 
-                a strong understanding of UX design and web performance optimization.</p>
-        </div>
-
-        <div class="btn-brands">
-            <button onclick="window.open('https://drive.google.com/file/d/1WElfxe1OAmh0SmZLSHoLhFV8htmJwy0n/view?usp=sharing', '_blank');">Download My Resume</button>
-
-            <div class="brand hidden">
-                <img src="assets/css.png"/>
-                <img src="assets/java.png"/>
-                <img src="assets/python.png"/>
-                <img src="assets/js.png" />
-             </div>
-        </div>
-
-    </div>
 
     <div class="about-me">
         <h3>About Me</h3>
@@ -60,7 +12,6 @@
 
             <img src="assets/me.png" alt="photo">
         </div>
-   
     </div>
 
     <div class="experience">
@@ -152,20 +103,14 @@
         </div>
         </div>
     </div>
-
     <div class="contact-me">
         <button onclick="location.href='mailto:jordanjuniordjimelykheambo@gmail.com';">Contact Me</button>
     </div>
-
     <div class="logo-links hidden">
         <img src="assets/facebook.png"/>
         <img src="assets/github.png"/>
         <img src="assets/instagram.png"/>
     </div>
-
     <footer class="footer">
         <p>All Rights Reserved Jordan Junior 2023</p>
     </footer>
-    
-</body>
-</html>

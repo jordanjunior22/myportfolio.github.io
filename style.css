@@ -167,7 +167,7 @@
 }
 .My-work{
     background-color:#13132A;
-    min-height: 500px;
+    
     padding: 0 6rem;
 }
 .My-work > h3{
@@ -180,8 +180,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 4rem;
+    padding-bottom: 4rem;
     transform: translateX(-100%);
     filter: blur(5px);
+    
 }
 .box{
     width: 230px;
@@ -250,6 +252,8 @@ margin-top: 1rem;
     min-height: 550px;
     background: #13132A;
     padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
 }
 .tab{
     display: flex;
@@ -311,7 +315,7 @@ margin-top: 1rem;
 }
 .contact-me{
     background-color: #13132B;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,8 +362,153 @@ margin-top: 1rem;
     filter: blur(0);
     transform: translate(0);
 }
+.menu{
+    color: white;
+    font-size: 30px;
+}
+.navbar i{
+    display: none;
+}
+
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
+    }
+}
+
+@media (max-width: 426px) {
+    .navbar i{
+        display: block;
+        margin-right: -4rem;
+    }
+    .navbar{
+    height: 60px;
+    }
+    .left-nav{
+        display: none;
+    }
+    .logo{
+        font-size: 15px;
+        margin-left: -4rem;
+    }
+    .home{
+        padding: 2rem 2rem;
+        height: 300px;
+    }
+    .hi{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .des{
+        font-size: 30px;
+    }
+    .des-two{
+        font-size: 12px;
+        width: 300px;
+    }
+    .btn-brands{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-brands > button{
+        font-size: 10px;
+        width: 200px;
+        height: 40px;
+        
+    }
+    .brand >img{
+        padding: 20px 30px;
+        width: 20px;
+     }
+     .about-me{
+        height: 400px;
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .about-me h3{
+        
+        font-size: 20px;
+   
+      }
+      .text-image p{
+        font-size: 12px;
+        padding-left: 10px;
+        width: 100%;
+      }
+      .text-image img{
+        width: 150px;
+        height: 150px;
+
+      }
+      .text-image{
+        flex-direction: row-reverse;
+      }
+      .experience{
+        min-height: 400px;
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .experience h3{
+        font-size: 20px;
+      }
+      .job > h4{
+        font-size: 14px;
+        
+    }
+    .tab{
+        margin-top: 2rem;
+    }
+    #jobroles{
+        font-size: 14px;
+
+    }
+    #list{
+        font-size: 10px;
+    }
+    .My-work{
+        display: flex;
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2rem;
+    
+    }
+    .My-work h3{
+        font-size: 20px;
+    }
+    .box{
+        width: 200px;
+        height: 271px;
+    }
+    .top_folder img{
+        width: 20px;
+        height: 20px;
+    }
+    .box > h3{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .box > p{
+    font-size: 10px;
+    }
+    .colm-one{
+        padding-top: 2rem;
+    }
+    .contact-me > button{
+        font-size: 10px;
+        width: 200px;
+        height: 40px;
+    }
+    .logo-links img{
+        width: 20px;
+        height: 20px;
     }
 }
