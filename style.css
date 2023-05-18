@@ -527,3 +527,29 @@ margin-top: 1rem;
      }
 
 }
+
+@media (max-width: 321px) {
+    *{
+        margin-left: -0.2rem;
+    }
+    .about-me{
+        height: 500px;
+        
+      }
+
+    .box{
+        width: 170px;
+        height: 241px;
+    }
+    .top_folder img{
+        width: 20px;
+        height: 20px;
+    }
+    .box > h3{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .box > p{
+    font-size: 9px;
+    }
+}
