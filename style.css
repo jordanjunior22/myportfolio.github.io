@@ -167,7 +167,7 @@
 }
 .My-work{
     background-color:#13132A;
-    min-height: 900px;
+    min-height: 500px;
     padding: 0 6rem;
 }
 .My-work > h3{
@@ -180,7 +180,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 4rem;
-    
+    transform: translateX(-100%);
+    filter: blur(5px);
 }
 .box{
     width: 230px;
@@ -347,4 +348,18 @@ margin-top: 1rem;
     transition: all 0.5s ease-in-out;
     transform: scale(1.1);
 
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
 }
