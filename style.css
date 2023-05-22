@@ -255,6 +255,9 @@ margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
+.hamburger{
+    display: none;
+}
 .tab{
     display: flex;
     justify-content: center;
@@ -380,15 +383,62 @@ margin-top: 1rem;
     .title{
         width: 100%;
     }
-    .navbar i{
-        display: block;
-        margin-right: -4rem;
-    }
+ 
     .navbar{
     height: 60px;
+    position: relative;
     }
-    .left-nav{
+    .left-nav button{
         display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: -4rem;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+
+    }
+    .navbar{
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+   
+    .left-nav{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #13132A;
+    }
+    .left-nav.active{
+        left: 0;
+    }
+    .left-nav a{
+        padding: 50px;
+        
     }
     .logo{
         font-size: 15px;
